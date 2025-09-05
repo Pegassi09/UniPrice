@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>UniPrice</title>
+  <link rel="icon" type="image/png" href="uniprice-logo.png">
+</head>
+<body>
+  <header class="site-header">
+    <!-- Botão de contato -->
+    <button id="contact-btn" class="contact-btn">📩 Entre em Contato</button>
+
+    <div class="logo">
+      <a href="https://oficial.unimar.br" target="_blank">
+        <img src="unimar-logo.png" alt="Logo Unimar">
+      </a>
+    </div>
+
+    <!-- Botão de tema -->
+    <button id="theme-toggle" class="theme-toggle">🌙</button>
+
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+  </header>
+
+  <nav class="mobile-menu" id="mobile-menu">
+    <a href="https://oficial.unimar.br" target="_blank">🌐 Site Oficial</a>
+    <a href="https://vestibular.unimar.br" target="_blank">🎓 Vestibular</a>
+  </nav>
+
+  <section class="hero">
+    <h1>Transforme seu Futuro na <span>UNIMAR</span></h1>
+    <p>Descubra valores, cursos e oportunidades para começar sua jornada acadêmica.</p>
+    <a href="https://vestibular.unimar.br" target="_blank" class="cta-button">Inscreva-se Agora</a>
+  </section>
+
+  <main>
+    <section class="container">
+      <div class="AboutUs">
+          <h2>Quem Somos?</h2>
+          <p>Este site foi desenvolvido para que Estudantes e Interessados em estudar futuramente na UNIMAR, consigam pesquisar de forma clara e objetiva o valor de cursos e calcular descontos obtidos pelo mesmo.</p>
+      </div>
+      
+      <div class="Functionalitys">
+          <h2>Nossa Funcionalidade</h2>
+          <p>Encontre informações sobre valores, compare cursos e descubra as diversas oportunidades que a UNIMAR tem para transformar o seu futuro.</p>
+      </div>
+
+      <div class="Courses">
+          <h2>Nossos Cursos</h2>
+          <p>Aqui você irá encontrar cursos que abrangem todas as áreas de atuação, como tecnologia, saúde, direito, engenharias e muito mais.</p>
+      </div>
+    </section>
+
+    <section class="video-section">
+      <p>🎥 Conheça o campus ✨</p>
+      <a href="https://www.youtube.com/watch?v=1ZKmuN5qClc" target="_blank">Assista ao vídeo</a>
+    </section>
+
+    <section class="cursos-container">
+      <div class="cursos">
+        <h2 class="seletor-topo"><label for="selecao">Selecione um Curso</label></h2>
+        <select name="select" id="selecao">
+          <option value="">SELECIONE O CURSO DESEJADO</option>
+          <option value="1">Medicina</option>
+          <option value="2">Odontologia</option>
+          <option value="3">Biomedicina</option>
+          <option value="4">Enfermagem</option>
+          <option value="5">Fisioterapia</option>
+          <option value="6">Psicologia</option>
+          <option value="7">Educação Física</option>
+          <option value="8">Nutrição</option>
+          <option value="9">Medicina Veterinária</option>
+          <option value="10">Engenharia Civil</option>
+          <option value="11">Análise e Desenvolvimento de Sistemas</option>
+          <option value="12">Ciência da Computação</option>
+          <option value="13">Administração</option>
+          <option value="14">Direito</option>
+          <option value="15">Publicidade e Propaganda</option>
+          <option value="16">Bacharelado em Inteligencia Artificial</option>
+          <option value="17">Cibersegurança e Infraestrutura de Redes</option>
+          <option value="18">Engenharia de Produção Mecânica</option>
+        </select>
+        <div class="valor-curso" id="valor-curso">
+          <h2>Valor do Curso</h2>
+          <p id="valor">Selecione um curso para ver o valor.</p>
+          <img id="curso-imagem" src="" alt="Imagem do curso" style="display:none;">
+
+          <div id="desconto-container" style="display:none;">
+            <label for="desconto">Tem desconto? (%): </label>
+            <input type="number" id="desconto" min="0" max="100" placeholder="Ex: 20">
+            <button id="aplicar-desconto">Aplicar</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 UniPrice - Todos os direitos reservados</p>
+  </footer>
+
+  <!-- Modal de contato -->
+  <div id="contact-modal" class="contact-modal">
+    <div class="contact-content">
+      <span class="close-modal" id="close-modal">&times;</span>
+      <h2>Entre em Contato</h2>
+      <form id="contact-form" action="mailto:falecom@unimar.br" method="POST" enctype="text/plain">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
