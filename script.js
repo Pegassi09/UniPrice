@@ -66,7 +66,7 @@ select.addEventListener("change", () => {
     descontoContainer.style.display = "none";
   }
 });
-
+//Descontador de preços de acordo com a porcentagem//
 aplicarBtn.addEventListener("click", () => {
   const desconto = parseFloat(descontoInput.value);
   if (!isNaN(desconto) && desconto > 0 && desconto < 100 && precoAtual) {
@@ -75,15 +75,15 @@ aplicarBtn.addEventListener("click", () => {
   }
 });
 
+// funcionalidades do alternador de tema//
 const themeToggle = document.getElementById("theme-toggle");
-
 if (localStorage.getItem("theme") === "dark") {
   document.body.classList.add("dark-mode");
   themeToggle.textContent = "🌙";
 } else {
   themeToggle.textContent = "☀️";
 }
-
+//muda o icone do tema de acordo com o mesmo//
 themeToggle.addEventListener("click", () => {
   document.body.classList.toggle("dark-mode");
   if (document.body.classList.contains("dark-mode")) {
@@ -99,6 +99,7 @@ const contactBtn = document.getElementById("contact-btn");
 const contactModal = document.getElementById("contact-modal");
 const closeModal = document.getElementById("close-modal");
 
+//Funcionalidades dos botões do entre em contato//
 contactBtn.addEventListener("click", () => {
   contactModal.style.display = "block";
 });
