@@ -26,6 +26,7 @@ body {
   margin: 0 auto;
 }
 
+
 .contact-btn {
   position: absolute;
   left: 10%;
@@ -324,8 +325,8 @@ body {
   transition: 0.3s;
 }
 #aplicar-desconto:hover {
-  background: #ffc107;
-  color: white;
+  background: var(--highlight);
+  background-color: var(--primary);
 }
 
 footer {

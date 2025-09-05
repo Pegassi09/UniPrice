@@ -13,6 +13,7 @@ const aplicarBtn = document.getElementById("aplicar-desconto");
 
 let precoAtual = null;
 
+//define o preço de cada curso//
 const precos = {
   1: 12203.06, 2: 2390.20, 3: 1816.55, 4: 1434.13,
   5: 1042.83, 6: 1577.53, 7: 956.07, 8: 1266.81,
@@ -21,6 +22,7 @@ const precos = {
   17: null, 18: 1766.83
 };
 
+//faz as imagens aparecer quando selecionar o curso desejado//
 const imagens = {
   1: "images/Medicina.jpg", 
   2: "images/ODONTO.jpg", 
@@ -42,6 +44,7 @@ const imagens = {
   18: "images/ENGmecanica.jpg"
 };
 
+//seletor de cursos, quando selecionar, irá mostrar o valor do curso e perguntar se há desconto//
 select.addEventListener("change", () => {
   const cursoSelecionado = select.value;
   if (cursoSelecionado && precos[cursoSelecionado] !== undefined) {
@@ -69,7 +72,7 @@ select.addEventListener("change", () => {
 //Descontador de preços de acordo com a porcentagem//
 aplicarBtn.addEventListener("click", () => {
   const desconto = parseFloat(descontoInput.value);
-  if (!isNaN(desconto) && desconto > 0 && desconto < 100 && precoAtual) {
+  if (!isNaN(desconto) && desconto > 0 && desconto <= 100 && precoAtual) {
     const precoFinal = precoAtual - (precoAtual * (desconto / 100));
     valor.textContent = `Mensalidade com desconto: R$ ${precoFinal.toFixed(2)} / mês`;
   }
@@ -83,6 +86,7 @@ if (localStorage.getItem("theme") === "dark") {
 } else {
   themeToggle.textContent = "☀️";
 }
+
 //muda o icone do tema de acordo com o mesmo//
 themeToggle.addEventListener("click", () => {
   document.body.classList.toggle("dark-mode");
