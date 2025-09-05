@@ -26,7 +26,6 @@ body {
   margin: 0 auto;
 }
 
-/* Botão de contato */
 .contact-btn {
   position: absolute;
   left: 10%;
@@ -45,7 +44,6 @@ body {
   color: white;
 }
 
-/* Modal de contato */
 .contact-modal {
   display: none;
   position: fixed;
@@ -99,7 +97,6 @@ body {
   cursor: pointer;
 }
 
-/* Botão de tema */
 .theme-toggle {
   position: absolute;
   right: 10%;
@@ -107,7 +104,7 @@ body {
   top: 15px;
   background: transparent;
   border: none;
-  font-size: 34px; /* maior */
+  font-size: 34px;
   cursor: pointer;
   color: white;
   transition: transform 0.3s ease, color 0.3s ease;
@@ -117,7 +114,6 @@ body {
   color: var(--highlight);
 }
 
-/* HEADER */
 .site-header {
   position: fixed;
   top: 0;
@@ -174,7 +170,6 @@ body {
   display: flex;
 }
 
-/* HERO */
 .hero {
   margin-top: 90px;
   text-align: center;
@@ -209,7 +204,6 @@ body {
   color: white;
 }
 
-/* SECTIONS */
 .container {
   display: flex;
   justify-content: center;
@@ -240,7 +234,6 @@ body {
   margin-bottom: 12px;
 }
 
-/* VIDEO */
 .video-section {
   margin: 80px auto 40px auto;
   text-align: center;
@@ -268,7 +261,6 @@ body {
   transform: scale(1.05);
 }
 
-/* CURSOS */
 .cursos-container {
   display: flex;
   justify-content: center;
@@ -324,7 +316,6 @@ body {
   color: white;
 }
 
-/* FOOTER */
 footer {
   text-align: center;
   padding: 20px;

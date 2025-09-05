@@ -75,7 +75,6 @@ aplicarBtn.addEventListener("click", () => {
   }
 });
 
-// Toggle tema com persistência
 const themeToggle = document.getElementById("theme-toggle");
 
 if (localStorage.getItem("theme") === "dark") {
@@ -96,7 +95,6 @@ themeToggle.addEventListener("click", () => {
   }
 });
 
-// Modal de contato
 const contactBtn = document.getElementById("contact-btn");
 const contactModal = document.getElementById("contact-modal");
 const closeModal = document.getElementById("close-modal");
