@@ -9,16 +9,16 @@
 </head>
 <body>
   <header class="site-header">
-    <!-- cabeçalho do site-->
-    <button id="contact-btn" class="contact-btn">📩 Entre em Contato</button>
-
     <div class="logo">
       <a href="https://oficial.unimar.br" target="_blank">
-        <img src="unimar-logo.png" alt="Logo Unimar">
+        <img src="unimar-logo.png" alt="Logo-Unimar">
       </a>
     </div>
 
-    <button id="theme-toggle" class="theme-toggle">🌙</button>
+    <div class="actions">
+      <button id="contact-btn" class="contact-btn">📩 Entre em Contato</button>
+      <button id="theme-toggle" class="theme-toggle">🌙</button>
+    </div>
 
     <div class="menu-toggle" id="menu-toggle"></div>
   </header>
@@ -56,7 +56,9 @@
       <p>🎥 Conheça o campus ✨</p>
       <a href="https://www.youtube.com/watch?v=1ZKmuN5qClc" target="_blank">Assista ao vídeo</a>
     </section>
-
+  <section class="textinho">
+    <h4>Digamos que Você ou seu filho estejam interessados em algum curso da unimar porém vocês não sabem o valor do curso, ou vocês tem alguma quantia de desconto nos cursos da <strong>UNIMAR</strong> e não sabem como aplicar ele e calcular o valor final do curso com seu desconto, aqui na <strong>UniPrice</strong> nós conseguimos ajudar você com isso</h4>
+  </section>
     <section class="cursos-container">
       <div class="cursos">
         <h2 class="seletor-topo"><label for="selecao">Selecione um Curso</label></h2>
@@ -97,14 +99,14 @@
   </main>
 
   <footer>
-    <p>© 2025 UniPrice - Site desenvolvido durante o BOOTCAMP 2025 pelo aluno Bruno Vieira dos Santos © </p>
+    <p>  ©2025 <strong>UniPrice</strong> <br> Site desenvolvido durante o BOOTCAMP 2025 pelo aluno Bruno Vieira dos Santos</p>
   </footer>
 
   <div id="contact-modal" class="contact-modal">
     <div class="contact-content">
       <span class="close-modal" id="close-modal">&times;</span>
       <h2>Entre em Contato</h2>
-      <form id="contact-form" action="mailto:falecom@unimar.br" method="POST" enctype="text/plain">
+      <form id="contact-btn" action="mailto:falecom@unimar.br" method="POST" enctype="text/plain">
         <label for="nome">Nome:</label>
         <input type="text" id="nome" name="nome" required>
 
