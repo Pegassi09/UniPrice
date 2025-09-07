@@ -208,7 +208,7 @@ html, body {
 .hero {
   margin-top: 2px;
   text-align: center;
-  padding: 70px 20px;
+  padding: 85px 20px;
   background: linear-gradient(135deg, var(--primary), var(--secondary));
   color: white;
   border-radius: 0 0 25px 25px;
@@ -430,7 +430,7 @@ footer {
     font-size: 24px;
   }
   .hero {
-    padding: 50px 15px;
+    padding: 55px 15px;
   }
   .hero h1 {
     font-size: 26px;
@@ -476,7 +476,7 @@ footer {
     font-size: 22px;
   }
   .hero h1 {
-    font-size: 22px;
+    font-size: 25px;
   }
   .hero p {
     font-size: 14px;
