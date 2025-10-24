@@ -15,11 +15,29 @@ let precoAtual = null;
 
 //define o preço de cada curso//
 const precos = {
-  1: 12203.06, 2: 2390.20, 3: 1816.55, 4: 1434.13,
-  5: 1042.83, 6: 1577.53, 7: 956.07, 8: 1266.81,
-  9: 2355.79, 10: 1766.83, 11: 725.03, 12: 928.20,
-  13: 956.07, 14: 1075.60, 15: 1195.09, 16: 928.20,
-  17: null, 18: 1766.83
+  1: 12813.21,
+  2: 2509.71,
+  3: 1907.38,
+  4: 1505.84,
+  5: 1094.97,
+  6: 1656.41,
+  7: 1003.87,
+  8: 1330.15,
+  9: 2473.58,
+  10: 1855.17,
+  11: 761.28,
+  12: 974.61,
+  13: 1003.87,
+  14: 1129.38,
+  15: 1254.84,
+  16: 974.61,
+  17: 761.28,
+  18: 1855.17,
+  19: 761.28,
+  20: 1656.41,
+  21: 1003.87,
+  22: 1094.97,
+  23: 1716.62
 };
 
 //faz as imagens aparecer quando selecionar o curso desejado//
@@ -41,8 +59,14 @@ const imagens = {
   15: "images/publieprop.jpeg", 
   16: "images/intartificial.jpg",
   17: "images/ciberseguranca.jpg", 
-  18: "images/ENGmecanica.jpg"
-};
+  18: "images/ENGmecanica.jpg",
+  19: "images/DGrafico.jpg",
+  20: "images/ArqUrb.png",
+  21: "images/ccont.jpg",
+  22: "images/ENGagro.jpg",
+  23: "images/farma.jpg",
+
+}
 
 //seletor de cursos, quando selecionar, irá mostrar o valor do curso e perguntar se há desconto//
 select.addEventListener("change", () => {
@@ -72,7 +96,7 @@ select.addEventListener("change", () => {
 //Descontador de preços de acordo com a porcentagem//
 aplicarBtn.addEventListener("click", () => {
   const desconto = parseFloat(descontoInput.value);
-  if (!isNaN(desconto) && desconto > 0 && desconto <= 100 && precoAtual) {
+  if (!isNaN(desconto) && desconto >= 0 && desconto <= 100 && precoAtual) {
     const precoFinal = precoAtual - (precoAtual * (desconto / 100));
     valor.textContent = `Mensalidade com desconto: R$ ${precoFinal.toFixed(2)} / mês`;
   }
